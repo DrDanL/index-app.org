@@ -1,2 +1,3 @@
-# index-app.org
-index-app.org website
+#InDEx App Website Template
+
+InDEx app website template, based on design by Paolo Tripodi, 2014 with modifications.
