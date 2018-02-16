@@ -1,11 +1,5 @@
 // toggle visibility for css3 animations
-$(document).ready(function() {
-	$('header').addClass('visibility');
-	$('.carousel-iphone').addClass('visibility');
-	$('.academic h1').addClass('visibility');
-	$('.features .col-md-4').addClass('visibility');
-	$('.social .col-md-12').addClass('visibility');
-});
+
 
 //iphone carousel animation
 $(window).load(function () {
@@ -27,52 +21,6 @@ var scrollTop = $(window).scrollTop();
 
 		$('.navbar-default').removeClass('fixed-to-top');
 	}
-
-//animations
-	$('.academic').each(function(){
-
-		var imagePos = $(this).offset().top;
-		var topOfWindow = $(window).scrollTop();
-
-			if (imagePos < topOfWindow+650) {
-				$(this).addClass("animated fadeInRight");
-			}
-
-	});
-
-
-	$('.fearures').each(function(){
-
-		var imagePos = $(this).offset().top;
-		var topOfWindow = $(window).scrollTop();
-
-			if (imagePos < topOfWindow+650) {
-				$(this).addClass("animated flipInY");
-			}
-
-	});
-
-	$('.team').each(function(){
-
-		var imagePos = $(this).offset().top;
-		var topOfWindow = $(window).scrollTop();
-
-			if (imagePos < topOfWindow+550) {
-				$(this).addClass("animated pulse");
-			}
-
-	});
-
-	$('.publications').each(function(){
-
-		var imagePos = $(this).offset().top;
-		var topOfWindow = $(window).scrollTop();
-
-			if (imagePos < topOfWindow+650) {
-				$(this).addClass("animated fadeInRight");
-			}
-
-	});
 
 });
 
